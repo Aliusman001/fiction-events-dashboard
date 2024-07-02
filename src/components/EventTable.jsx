@@ -28,12 +28,10 @@ const style = {
 
 function EventTable({ tableContent }) {
   const [open, setOpen] = useState(false);
-  const [sort, setSort] = useState(true);
+  const [sort, setSort] = useState(false);
   const [data, setData] = useState({});
 
   const scrollElement = useRef(null);
-
-  const actualData = tableContent.events;
 
   const handleClickOpen = (v) => {
     setOpen(true);
@@ -57,23 +55,39 @@ function EventTable({ tableContent }) {
     borderBottom: "1px solid rgb(173, 173, 173)",
   }));
 
-  useEffect(
-    function () {
-      if (sort) {
-        tableContent?.setEvents({
-          ...tableContent?.events,
-          pages: tableContent?.events?.pages?.map((page) =>
-            page.reverse().map((v) => {
-              return { ...v, results: v.results.reverse() };
-            })
-          ),
-        });
-      } else {
-        tableContent.setEvents(actualData);
+  useEffect(() => {
+    if (sort) {
+      if (tableContent && tableContent.events) {
+        const updatedEvents = {
+          ...tableContent.events,
+          pages: tableContent.events.pages?.map((page) => {
+            return {
+              ...page,
+              results: page.results.sort(
+                (a, b) => new Date(a.start) - new Date(b.start)
+              ),
+            };
+          }),
+        };
+        tableContent.setEvents({ ...updatedEvents });
       }
-    },
-    [sort]
-  );
+    } else {
+      if (tableContent && tableContent.events) {
+        const updatedEvents = {
+          ...tableContent.events,
+          pages: tableContent.events.pages?.map((page) => {
+            return {
+              ...page,
+              results: page.results.sort(
+                (a, b) => new Date(b.start) - new Date(a.start)
+              ),
+            };
+          }),
+        };
+        tableContent.setEvents({ ...updatedEvents });
+      }
+    }
+  }, [sort]);
 
   useEffect(() => {
     const handleScroll = (event) => {

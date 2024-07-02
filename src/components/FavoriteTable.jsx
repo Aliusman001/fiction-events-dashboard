@@ -29,6 +29,8 @@ const style = {
 function FavoriteTable() {
   const [data, setData] = useState({});
   const [open, setOpen] = useState(false);
+  // const [sort, setSort] = useState(false);
+
   const dispatch = useDispatch();
   const favoriteArray = useSelector((store) => store.data.favorite);
   useEffect(function () {
@@ -44,6 +46,39 @@ function FavoriteTable() {
   const handleClose = () => {
     setOpen(false);
   };
+  // useEffect(() => {
+  //   if (sort) {
+  //     if (tableContent && tableContent.events) {
+  //       const updatedEvents = {
+  //         ...tableContent.events,
+  //         pages: tableContent.events.pages?.map((page) => {
+  //           return {
+  //             ...page,
+  //             results: page.results.sort(
+  //               (a, b) => new Date(a.start) - new Date(b.start)
+  //             ),
+  //           };
+  //         }),
+  //       };
+  //       tableContent.setEvents({ ...updatedEvents });
+  //     }
+  //   } else {
+  //     if (tableContent && tableContent.events) {
+  //       const updatedEvents = {
+  //         ...tableContent.events,
+  //         pages: tableContent.events.pages?.map((page) => {
+  //           return {
+  //             ...page,
+  //             results: page.results.sort(
+  //               (a, b) => new Date(b.start) - new Date(a.start)
+  //             ),
+  //           };
+  //         }),
+  //       };
+  //       tableContent.setEvents({ ...updatedEvents });
+  //     }
+  //   }
+  // }, [sort]);
 
   const TableCustom = styled(Table)(({ theme }) => ({
     width: "100%",
@@ -78,12 +113,12 @@ function FavoriteTable() {
                     {i === 0 ? (
                       <div
                         onClick={() => {
-                          setSort((c) => !c);
+                          // setSort((c) => !c);
                         }}
                         className="!flex items-center gap-2 cursor-pointer"
                       >
                         <span className="uppercase font-semibold">{v}</span>
-                        <img src="arrow.svg" alt="arrow.svg" />
+                        {/* <img src="arrow.svg" alt="arrow.svg" /> */}
                       </div>
                     ) : (
                       <div className="!flex items-center gap-2 cursor-pointer">
