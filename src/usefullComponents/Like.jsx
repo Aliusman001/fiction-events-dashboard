@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { favorite, unFavorite } from "../store/dataReducer";
-import { FaHeart, FaRegHeart } from "React-Icons/fa";
+import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 function Like({ className = "w-5 h-5", data }) {
   const favList = useSelector((store) => store.data.favorite);
