@@ -1,0 +1,263 @@
+{
+  "relevance": 0.0,
+  "id": "6Tt9wqEXKb6f7gL26M",
+  "parent_event": {
+      "parent_event_id": "Fjnewv3kLTTn33or3N"
+  },
+  "title": "Light Pakistan",
+  "description": "Sourced from predicthq.com",
+  "category": "expos",
+  "labels": [
+      "expo"
+  ],
+  "rank": 64,
+  "local_rank": 64,
+  "phq_attendance": 5000,
+  "entities": [
+      {
+          "entity_id": "3iWjN7krtVdfBZYxLFECHV",
+          "name": "Karachi Expo Center",
+          "type": "venue",
+          "formatted_address": "Main Main University Rd, Block 15 Gulshan-e-Iqbal, Karachi, Karachi City, Sindh, Pakistan"
+      },
+      {
+          "entity_id": "akX3PwUHjeZK2KfDvpxEyL",
+          "name": "Light Pakistan",
+          "type": "event-group",
+          "formatted_address": "F7C5+8RG, Expo Center Rd, Block H-3 Block H 3 Phase 2 Johar Town, Lahore, Punjab, Pakistan",
+          "category": "expos",
+          "labels": [
+              "event-group",
+              "expo",
+              "recurring"
+          ],
+          "recurring": {
+              "ical": "DTSTART;VALUE=DATE-TIME:20210521T090000\nRRULE:FREQ=YEARLY;INTERVAL=1"
+          }
+      }
+  ],
+  "duration": 259199,
+  "start": "2024-09-25T19:00:00Z",
+  "start_local": "2024-09-26T00:00:00",
+  "end": "2024-09-28T18:59:59Z",
+  "end_local": "2024-09-28T23:59:59",
+  "updated": "2024-06-04T01:01:18Z",
+  "first_seen": "2023-10-29T06:12:21Z",
+  "timezone": "Asia/Karachi",
+  "location": [
+      67.0758217,
+      24.9015758
+  ],
+  "geo": {
+      "geometry": {
+          "coordinates": [
+              67.0758217,
+              24.9015758
+          ],
+          "type": "Point"
+      },
+      "placekey": "@89g-532-ghq",
+      "address": {
+          "country_code": "PK",
+          "formatted_address": "Main Main University Rd, Block 15 Gulshan-e-Iqbal, Karachi, Karachi City, Sindh, Pakistan",
+          "locality": "Karachi",
+          "region": "Sindh"
+      }
+  },
+  "impact_patterns": [
+      {
+          "vertical": "accommodation",
+          "impact_type": "phq_attendance",
+          "impacts": [
+              {
+                  "date_local": "2024-09-24",
+                  "value": 74,
+                  "position": "leading"
+              },
+              {
+                  "date_local": "2024-09-25",
+                  "value": 368,
+                  "position": "leading"
+              },
+              {
+                  "date_local": "2024-09-26",
+                  "value": 1471,
+                  "position": "event_day"
+              },
+              {
+                  "date_local": "2024-09-27",
+                  "value": 1765,
+                  "position": "event_day"
+              },
+              {
+                  "date_local": "2024-09-28",
+                  "value": 1765,
+                  "position": "event_day"
+              },
+              {
+                  "date_local": "2024-09-29",
+                  "value": 177,
+                  "position": "lagging"
+              },
+              {
+                  "date_local": "2024-09-30",
+                  "value": 89,
+                  "position": "lagging"
+              }
+          ]
+      },
+      {
+          "vertical": "hospitality",
+          "impact_type": "phq_attendance",
+          "impacts": [
+              {
+                  "date_local": "2024-09-24",
+                  "value": 74,
+                  "position": "leading"
+              },
+              {
+                  "date_local": "2024-09-25",
+                  "value": 295,
+                  "position": "leading"
+              },
+              {
+                  "date_local": "2024-09-26",
+                  "value": 1471,
+                  "position": "event_day"
+              },
+              {
+                  "date_local": "2024-09-27",
+                  "value": 1765,
+                  "position": "event_day"
+              },
+              {
+                  "date_local": "2024-09-28",
+                  "value": 1765,
+                  "position": "event_day"
+              },
+              {
+                  "date_local": "2024-09-29",
+                  "value": 265,
+                  "position": "lagging"
+              }
+          ]
+      },
+      {
+          "vertical": "retail",
+          "impact_type": "phq_attendance",
+          "impacts": [
+              {
+                  "date_local": "2024-09-21",
+                  "value": 0,
+                  "position": "leading"
+              },
+              {
+                  "date_local": "2024-09-22",
+                  "value": 0,
+                  "position": "leading"
+              },
+              {
+                  "date_local": "2024-09-23",
+                  "value": 0,
+                  "position": "leading"
+              },
+              {
+                  "date_local": "2024-09-24",
+                  "value": 750,
+                  "position": "leading"
+              },
+              {
+                  "date_local": "2024-09-25",
+                  "value": 1600,
+                  "position": "leading"
+              },
+              {
+                  "date_local": "2024-09-26",
+                  "value": 5000,
+                  "position": "event_day"
+              },
+              {
+                  "date_local": "2024-09-27",
+                  "value": 5000,
+                  "position": "event_day"
+              },
+              {
+                  "date_local": "2024-09-28",
+                  "value": 5000,
+                  "position": "event_day"
+              },
+              {
+                  "date_local": "2024-09-29",
+                  "value": 1600,
+                  "position": "lagging"
+              },
+              {
+                  "date_local": "2024-09-30",
+                  "value": 0,
+                  "position": "lagging"
+              },
+              {
+                  "date_local": "2024-10-01",
+                  "value": 0,
+                  "position": "lagging"
+              },
+              {
+                  "date_local": "2024-10-02",
+                  "value": 0,
+                  "position": "lagging"
+              },
+              {
+                  "date_local": "2024-10-03",
+                  "value": 0,
+                  "position": "lagging"
+              }
+          ]
+      }
+  ],
+  "scope": "locality",
+  "country": "PK",
+  "place_hierarchies": [
+      [
+          "6295630",
+          "6255147",
+          "1168579",
+          "1164807",
+          "11744832",
+          "1167962"
+      ],
+      [
+          "6295630",
+          "6255147",
+          "1168579",
+          "1164807",
+          "1174872"
+      ]
+  ],
+  "state": "active",
+  "brand_safe": true,
+  "private": false,
+  "predicted_event_spend": 233267,
+  "predicted_event_spend_industries": {
+      "accommodation": 178496,
+      "hospitality": 40040,
+      "transportation": 14731
+  },
+  "phq_labels": [
+      {
+          "label": "science-and-technology",
+          "weight": 0.315
+      },
+      {
+          "label": "design-and-furnishing",
+          "weight": 0.261
+      },
+      {
+          "label": "management-and-consulting",
+          "weight": 0.23
+      },
+      {
+          "label": "manufacturing-and-petroleum-products",
+          "weight": 0.194
+      }
+  ]
+}
